@@ -99,4 +99,33 @@
 			$(this).attr('placeholder', $(this).data('holder'));
 		});
 	});
+	$('.viewed ul li:nth-child(3n), .catalog .sections li:nth-child(4n), .catalog .grid li:nth-child(4n), .index .more .dealer ul li:nth-child(3n), .index .news ul li:nth-child(3n)').css({
+		'margin-right': '-5px'
+	});
+	$('.product .tabs > ul > li > a').bind('click', function() {
+		$(this).parents('.tabs').children('div[data-tab="'+$(this).attr('href')+'"]').show().siblings('div').hide();
+		$(this).parent().addClass('active').siblings().removeClass('active');
+		return false;
+	}).filter(':first').click();
+	$('.panel .sub').each(function() {
+		var t = $(this);
+		var s = t.find('.temp p').size();
+		var o = Math.ceil(s/3);
+		for ( var i = 0; i <= 2; i++ ) {
+			for ( var j = 1; j<= o; j++ ) {
+				t.find('li:nth-child('+eval(i+1)+')').append(t.find('.temp p:nth-child('+eval(i*o+j)+')').clone());
+			}
+		}
+	});
+	$('.panel .nav li a').mouseover(function() {
+		$('.panel .sub[data-sub="'+eval($(this).parent().index()+1)+'"]').show().siblings('div.sub').hide();
+			$(this).parent().siblings().removeClass('hover');
+	});
+	$('.panel .sub').mouseover(function() {
+		$('.panel .nav li:nth-child('+$(this).attr('data-sub')+')').addClass('hover').siblings().removeClass('hover');
+	});
+	$('.panel').mouseleave(function() {
+		$('.panel .sub').hide();
+		$('.panel .nav li').removeClass('hover');
+	});
 });
