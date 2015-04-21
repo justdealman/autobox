@@ -1822,7 +1822,7 @@ h1 {
 	background:#ffffff;
 	border-top:1px solid #d6d6d6;
 }
-.catalog .nav > li > ul > li:first-child a {
+.catalog .nav > li > ul > li:first-child > a {
 	border-top-width:0;
 }
 .catalog .nav > li > ul > li > a:hover {
