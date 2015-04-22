@@ -65,10 +65,11 @@
 		$('.catalog .nav > li, .catalog .nav > li > ul > li').each(function() {
 			if ( $(this).children('ul').length > 0 ) {
 				$(this).addClass('sub');
+				$(this).children('span').append('<em class="drop"></em>');
 			}
 		});
-		$('.catalog .nav li.sub > a').bind('click', function() {	
-			$(this).parent().toggleClass('active');
+		$('.catalog .nav li.sub > span > em').bind('click', function() {	
+			$(this).parent().parent().toggleClass('active');
 			return false;
 		});
 	}
