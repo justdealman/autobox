@@ -62,7 +62,7 @@
 		return false;
 	});
 	if ( $('.catalog .nav').length > 0 ) {
-		$('.catalog .nav > li, .catalog .nav > li > ul > li').each(function() {
+		$('.catalog .nav > li, .catalog .nav > li > ul > li, .catalog .nav > li > ul > li > ul > li').each(function() {
 			if ( $(this).children('ul').length > 0 ) {
 				$(this).addClass('sub');
 				$(this).children('span').append('<em class="drop"></em>');

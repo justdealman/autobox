@@ -1838,7 +1838,7 @@ h1 {
 .catalog .nav > li > ul > li > span > a:hover {
 	text-decoration:underline;
 }
-.catalog .nav > li > ul > li > span > em.drop {
+.catalog .nav > li > ul > li span em.drop {
 	content:'';
 	position:absolute;
 	right:12px;
@@ -1849,33 +1849,36 @@ h1 {
 	margin-top:-11px;
 	background:url('../img/catalog_li_sub_sub.png') no-repeat left top;
 }
-.catalog .nav > li > ul > li.sub > span {
+.catalog .nav > li > ul > li.sub span {
 	padding-right:39px;
 }
-.catalog .nav > li > ul > li.sub.active > span > em.drop {
+.catalog .nav > li > ul > li.sub.active > span > em.drop, .catalog .nav > li > ul > li > ul > li.sub.active > span > em.drop {
 	background-position:0 -21px;
 }
-.catalog .nav > li > ul > li > ul {
+.catalog .nav > li > ul > li > ul, .catalog .nav > li > ul > li > ul > li > ul {
 	display:none;
 	margin:0;
 }
-.catalog .nav > li > ul > li.active > ul {
+.catalog .nav > li > ul > li.active > ul, .catalog .nav > li > ul > li > ul > li.active > ul {
 	display:block;
 }
-.catalog .nav > li > ul > li > ul > li > span {
+.catalog .nav > li > ul > li > ul > li span {
 	position:relative;
 	display:block;
 	padding:10px 20px 10px 30px;
 	background:#ffffff;
 	border-top:1px solid #d6d6d6;
 }
-.catalog .nav > li > ul > li > ul > li > span > a {
+.catalog .nav > li > ul > li > ul > li ul li span {
+	padding-left:40px;
+}
+.catalog .nav > li > ul > li > ul > li span a {
 	color:#000000;
 	font-size:14px;
 	line-height:17px;
 	font-weight:300;
 }
-.catalog .nav > li > ul > li > ul > li > span > a:hover {
+.catalog .nav > li > ul > li > ul > li span a:hover {
 	text-decoration:underline;
 }
 .catalog .sections {
