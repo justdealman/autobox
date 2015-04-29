@@ -129,4 +129,9 @@
 		$('.panel .sub').hide();
 		$('.panel .nav li').removeClass('hover');
 	});
+	$('.product .jcarousel-item a').bind('click', function() {
+		$(this).parents('.product').find('.gallery .big img').stop(true,true).fadeOut(100);
+		$(this).parents('.product').find('.gallery .big img[data-big="'+$(this).attr('href')+'"]').stop(true,true).delay(100).fadeIn(100);
+		return false;
+	}).filter(':first').click();
 });

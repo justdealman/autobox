@@ -2113,6 +2113,7 @@ h1 {
 	border:1px solid #adadad;
 }
 .product .gallery .big img {
+	display:none;
 	position:absolute;
 	top:0;
 	right:0;
