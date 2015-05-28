@@ -52,6 +52,24 @@
 				$('.filter .to').val(ui.values[1]);
 			}
 		});
+		$('.filter .from').change(function() {
+			if ( $(this).val() <= $('.range').slider('option', 'min') ) {
+				$(this).val($('.range').slider('option', 'min'));
+			}
+			if ( $(this).val() >= $('.range').slider('values', 1) ) {
+				$(this).val($('.range').slider('values', 1));
+			}
+			$('.range').slider('values', 0, $(this).val());
+		});
+		$('.filter .to').change(function() {
+			if ( $(this).val() >= $('.range').slider('option', 'max') ) {
+				$(this).val($('.range').slider('option', 'max'));
+			}
+			if ( $(this).val() <= $('.range').slider('values', 0) ) {
+				$(this).val($('.range').slider('values', 0));
+			}
+			$('.range').slider('values', 1, $(this).val());
+		});
 	}
 	$('.catalog .rb .method ul li a').bind('click', function() {
 		$(this).parent().addClass('active').siblings().removeClass('active');

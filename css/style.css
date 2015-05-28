@@ -1155,11 +1155,15 @@ h1 {
 	border-bottom:1px solid #000000;
 }
 .catalog {
-	clear:both;
-	overflow:hidden;
+	position:relative;
 	width:960px;
 	padding:15px;
 	margin:-15px auto 30px;
+}
+.catalog .clearfix {
+	clear:both;
+	overflow:hidden;
+	height:1px;
 }
 .catalog .filter {
 	float:left;
