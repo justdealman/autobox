@@ -71,10 +71,26 @@
 			$('.range').slider('values', 1, $(this).val());
 		});
 	}
+	$('.catalog .rb .method ul li').each(function() {
+		$(this).prepend('<span class="down"></span>');
+		$(this).prepend('<span class="up"></span>');
+	});
 	$('.catalog .rb .method ul li a').bind('click', function() {
-		$(this).parent().addClass('active').siblings().removeClass('active');
+		if ( $(this).parent().hasClass('active') ) {
+			$(this).parent().find('span.active').removeClass('active').siblings().addClass('active');
+		}
+		else {
+			$(this).parent().addClass('active').siblings().removeClass('active');
+			$(this).parent().find('span.up').addClass('active').siblings('span').removeClass('active');
+		}
 		return false;
 	});
+	$('.catalog .rb .method ul li span').bind('click', function() {
+		$(this).addClass('active').siblings('span').removeClass('active');
+	});
+	
+	
+	
 	$('.catalog .rb .view ul li a').bind('click', function() {
 		$(this).parent().addClass('active').siblings().removeClass('active');
 		return false;
@@ -152,4 +168,29 @@
 		$(this).parents('.product').find('.gallery .big img[data-big="'+$(this).attr('href')+'"]').stop(true,true).delay(100).fadeIn(100);
 		return false;
 	}).filter(':first').click();
+	$('.catalog .filter div.drop h5').bind('click', function() {
+		$(this).parent('.drop').toggleClass('active');
+	});
+	$('.catalog .filter div.drop').each(function() {
+		if ( $(this).find('ul').children('li').size() > 6 ) {
+			$(this).children('div').append('<h4><span>Развернуть</span></h4>');
+			$(this).find('ul').children('li').hide();
+			for ( var i=1; i<=6; i++ ) {
+				$(this).find('ul').children('li:nth-child('+i+')').show();
+			}
+		}
+	});
+	$('.catalog .filter div.drop h4 span').bind('click', function() {
+		if ( $(this).text() == 'Развернуть' ) {
+			$(this).parents('.drop').find('ul').children('li').show();
+			$(this).text('Свернуть');
+		}
+		else {
+			$(this).parents('.drop').find('ul').children('li').hide();
+			for ( var i=1; i<=6; i++ ) {
+				$(this).parents('.drop').find('ul').children('li:nth-child('+i+')').show();
+			}
+			$(this).text('Развернуть');
+		}
+	});
 });

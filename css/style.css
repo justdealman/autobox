@@ -1175,19 +1175,73 @@ h1 {
 	box-shadow:0 0 15px rgba(0,0,0,0.3);
 }
 .catalog .filter div {
-	padding:7px 20px 6px;
+	padding:13px 20px 6px;
 	border-top:1px solid #d6d6d6;
 }
 .catalog .filter div:first-child {
-	padding-top:9px;
 	border-top-width:0;
 }
+.catalog .filter div.buttons {
+	position:relative;
+	padding:22px 20px 22px;
+}
+.catalog .filter div.buttons button {
+	color:#ffffff;
+	font-size:14px;
+	line-height:17px;
+	font-weight:300;
+	cursor:pointer;
+	padding:6px 25px 7px 24px;
+	background:#ff0000;
+}
 .catalog .filter div h5 {
+	position:relative;
 	font-size:14px;
 	line-height:17px;
 	font-weight:500;
-	padding:0;
+	padding:0 25px 0 0;
 	margin:0 0 10px;
+}
+.catalog .filter div.drop h5 {
+	cursor:pointer;
+}
+.catalog .filter div.drop h5:after {
+	content:'';
+	position:absolute;
+	right:-4px;
+	top:1px;
+	width:13px;
+	height:13px;
+	background:url('../img/filter_drop_icon.png') no-repeat left top;
+}
+.catalog .filter div.drop.active h5:after {
+	background-position:0 -13px;
+}
+.catalog .filter div.drop > div {
+	display:none;
+	padding:0;
+	margin:0;
+	border:0;
+}
+.catalog .filter div.drop.active > div {
+	display:block;
+}
+.catalog .filter div h4 {
+	font-size:12px;
+	line-height:15px;
+	font-weight:500;
+	padding:0;
+	margin:16px 0 9px;
+}
+.catalog .filter div h4 span {
+	cursor:pointer;
+	border-bottom:1px dashed #000000;
+}
+.catalog .filter div.buttons h4 {
+	position:absolute;
+	right:20px;
+	top:27px;
+	margin:0;
 }
 .catalog .filter div ul {
 	margin:0;
@@ -1239,15 +1293,15 @@ h1 {
 .catalog .filter div h6 input.from {
 	float:left;
 }
-.catalog .filter div h6 input.to{
+.catalog .filter div h6 input.to {
 	float:right;
 }
 .catalog .filter .ui-slider {
 	position:relative;
 	height:4px;
 	padding:0;
-	margin:24px 0 18px;
-	background:#21395e;
+	margin:24px 0 16px;
+	background:url('../img/slider_range.png') repeat-x top;
 	border:0;
 	-webkit-border-radius:2px;
 	-moz-border-radius:2px;
@@ -1258,7 +1312,7 @@ h1 {
 	top:0;
 	height:4px;
 	padding:0;
-	background:url('../img/slider_range.png') repeat-x top;
+	background:#21395e;
 	border:0;
 }
 .catalog .filter .ui-slider-handle {
@@ -1301,6 +1355,33 @@ h1 {
 	font-weight:300;
 	margin:0 0 0 10px;
 }
+.catalog .rb .method ul li span {
+	display:none;
+	width:15px;
+	height:15px;
+	margin:1px 3px 0 0;
+	vertical-align:top;
+	cursor:pointer;
+	border:1px solid #adadad;
+	-webkit-box-shadow:0 3px 5px rgba(0,0,0,0.15);
+	-moz-box-shadow:0 3px 5px rgba(0,0,0,0.15);
+	box-shadow:0 3px 5px rgba(0,0,0,0.15);
+}
+.catalog .rb .method ul li.active span {
+	display:inline-block;
+}
+.catalog .rb .method ul li span.down {
+	background:#ffffff url('../img/sort_method_icon.png') no-repeat left top;
+}
+.catalog .rb .method ul li span.down.active {
+	background-position:0 -15px;
+}
+.catalog .rb .method ul li span.up {
+	background:#ffffff url('../img/sort_method_icon.png') no-repeat left -30px;
+}
+.catalog .rb .method ul li span.up.active {
+	background-position:0 -45px;
+}
 .catalog .rb .method ul li:first-child {
 	margin-left:0;
 }
@@ -1309,6 +1390,7 @@ h1 {
 }
 .catalog .rb .method ul li.active a {
 	color:#ff0000;
+	margin-left:5px;
 	border-bottom:1px dashed transparent;
 }
 .catalog .rb .view {
