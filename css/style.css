@@ -710,6 +710,9 @@ button::-moz-focus-inner {
 	margin:0 0 21px;
 	border-bottom:1px solid #ffffff;
 }
+.navigation > ul > li h3 a {
+	color:#ffffff;
+}
 .navigation > ul > li ul {
 	overflow:hidden;
 	max-height:456px;
@@ -1431,7 +1434,7 @@ h1 {
 	position:relative;
 	display:inline-block;
 	width:150px;
-	height:302px;
+	height:238px;
 	text-align:center;
 	vertical-align:top;
 	margin:0 12px 21px 0;
@@ -1453,8 +1456,8 @@ h1 {
 	left:0;
 	top:0;
 	width:130px;
-	min-height:282px;
-	height:282px;
+	min-height:218px;
+	height:218px;
 	background:#ffffff;
 	padding:13px 10px 7px;
 }
@@ -1470,9 +1473,9 @@ h1 {
 }
 .catalog .grid li > div .picture {
 	position:relative;
-	width:130px;
-	height:115px;
-	margin:0 0 6px;
+	width:150px;
+	height:124px;
+	margin:-6px 0 3px -10px;
 }
 .catalog .grid li > div .picture img {
 	position:absolute;
@@ -1480,8 +1483,8 @@ h1 {
 	right:0;
 	bottom:0;
 	left:0;
-	max-width:130px;
-	max-height:115px;
+	max-width:146px;
+	max-height:124px;
 	margin:auto;
 }
 .catalog .grid li > div h3 {
@@ -1513,12 +1516,12 @@ h1 {
 } 
 .catalog .grid li > div p {
 	overflow:hidden;
-	min-height:102px;
-	height:102px;
+	min-height:34px;
+	height:34px;
 	font-size:14px;
 	line-height:17px;
 	font-weight:300;
-	margin:0 0 2px;
+	margin:0 0 6px;
 }
 .catalog .grid li:hover > div p {
 	height:auto;
@@ -2398,6 +2401,31 @@ h1 {
 	font-weight:300;
 	margin:0;
 }
+.product .tabs div table {
+	width:100%;
+	margin:-10px 0 0;
+}
+.product .tabs div table th {
+	color:#ff0000;
+	font-size:14px;
+	line-height:17px;
+	font-weight:500;
+	text-align:left;
+	vertical-align:top;
+	padding:8px 30px 15px 30px;
+}
+.product .tabs div table td {
+	font-size:14px;
+	line-height:17px;
+	vertical-align:top;
+	padding:8px 30px 9px 30px;
+}
+.product .tabs div table th:first-child, .product .tabs div table td:first-child {
+	padding-right:0;
+}
+.product .tabs div table tbody tr:nth-child(2n+1) {
+	background:#f0f0f0;
+}
 .viewed {
 	width:960px;
 	margin:-17px auto 59px;
@@ -2569,4 +2597,35 @@ h1 {
 }
 .modal .buttons button.back {
 	float:right;
+}
+
+.gotop {
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:200;
+	width:174px;
+	height:100%;
+	cursor:pointer;
+	background:rgba(0,0,0,0.1);
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+.gotop:hover {
+	background:rgba(0,0,0,0.2);
+}
+.gotop p {
+	position:absolute;
+	right:0;
+	top:10%;
+	color:#ffffff;
+	font-size:14px;
+	line-height:17px;
+	font-weight:300;
+	padding:6px 43px 7px 43px;
+	margin:0;
+	background:#21395e url('../img/gotop_icon.png') no-repeat left top;
 }
