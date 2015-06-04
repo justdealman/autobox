@@ -208,6 +208,17 @@ $(document).ready(function() {
 			$(this).text('Развернуть');
 		}
 	});
+	if ( $('.catalog .filter').length > 0 ) {
+		$('.catalog .filter .drop').each(function() {
+			if ( $(this).find('input[type="checkbox"]:checked').length > 0 ) {
+				$(this).addClass('active');
+				if ( $(this).find('input[type="checkbox"]:checked').parents('li').index() > 5 ) {
+					$(this).find('ul').children('li').show();
+					$(this).find('h4 span').text('Свернуть');
+				}
+			}
+		});
+	}
 	if ( $('.panel').length > 0 ) {
 		$(window).bind('scroll', function() {
 			if ( $(document).scrollTop() > $('.header').height() ) {
