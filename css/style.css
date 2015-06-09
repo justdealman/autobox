@@ -228,7 +228,7 @@ button::-moz-focus-inner {
 	position:relative;
 	text-align:right;
 	padding:0 0 0 44px;
-	margin:11px 0 0;
+	margin:10px 0 0;
 }
 .header .contacts li:first-child {
 	margin-top:0;
@@ -236,14 +236,14 @@ button::-moz-focus-inner {
 .header .contacts li.phone:before {
 	content:url('../img/phone_icon.png');
 	position:absolute;
-	left:6px;
+	left:7px;
 	top:50%;
 	margin-top:-18px;
 }
 .header .contacts li.mail:before {
 	content:url('../img/mail_icon.png');
 	position:absolute;
-	left:6px;
+	left:1px;
 	top:50%;
 	margin-top:-9px;
 }
@@ -257,8 +257,8 @@ button::-moz-focus-inner {
 	font-weight:500;
 }
 .header .contacts li.mail p {
-	font-size:16px;
-	line-height:20px;
+	font-size:17px;
+	line-height:21px;
 }
 .header .user {
 	position:absolute;
@@ -1893,8 +1893,7 @@ h1 {
 .catalog .nav > li.sub > span {
 	padding-right:39px;
 }
-.catalog .nav > li.sub.active > a {
-	font-weight:500;
+.catalog .nav > li.sub.active > span {
 	background:#ff0000;
 }
 .catalog .nav > li.sub.active > span > em.drop {
