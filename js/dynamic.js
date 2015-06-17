@@ -54,6 +54,9 @@ $(document).ready(function() {
 	if ( $('input[type="checkbox"]').length > 0 ) {
 		$('input[type="checkbox"]').uniform();
 	}
+	if ( $('input[type="radio"]').length > 0 ) {
+		$('input[type="radio"]').uniform();
+	}
 	if ( $('.filter').length > 0 ) {
 		var rangeFrom = 1750;
 		var rangeTo = 3750;
@@ -129,6 +132,7 @@ $(document).ready(function() {
 	}
 	$('.modal').append('<span class="close"></span>');
 	$('[data-target]').bind('click', function() {
+		$('.modal').hide();
 		var target = $('.modal[data-modal="'+$(this).attr('data-target')+'"]');
 		target.css({
 			'top': $(document).scrollTop()+($(window).height()/2)-(target.outerHeight()/2)+'px'
@@ -252,6 +256,34 @@ $(document).ready(function() {
 	$('.gotop').bind('click', function() {
 		$('html, body').animate({ scrollTop: '0' }, 500);
 	});
+	$('em.minus').click(function() {
+		var $input = $(this).parent().find('input');
+		var count = parseInt($input.val()) - 1;
+		count = count < 1 ? 1 : count;
+		$input.val(count);
+		$input.change();
+		return false;
+	});
+	$('em.plus').click(function() {
+		var $input = $(this).parent().find('input');
+		$input.val(parseInt($input.val()) + 1);
+		$input.change();
+		return false;
+	});
+	if ( $('.basket .minimize').length > 0 ) {
+		$('.basket .goods tbody').hide();
+		$('.basket .minimize span').bind('click', function(event) {
+			if ( $(this).text() == 'развернуть' ) {
+				$('.basket .goods tbody').show();
+				$(this).text('свернуть');
+			}
+			else {
+				$('.basket .goods tbody').hide();
+				$(this).text('развернуть');
+			}
+			event.preventDefault();
+		})
+	}
 });
 $(window).resize(function() {
 	panel();
