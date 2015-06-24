@@ -2701,6 +2701,16 @@ h1 {
 	margin:0;
 	background:#21395e url('../img/gotop_icon.png') no-repeat left top;
 }
+.gotop.minimized {
+	top:10%;
+	width:auto;
+	height:auto;
+	background:transparent;
+}
+.gotop.minimized p {
+	position:static;
+	display:inline-block;
+}
 
 /* Cabinet */
 

@@ -9,11 +9,17 @@
 	}
 });
 function panel() {
-	if ( $(window).width() > 1493 && $(document).scrollTop() > $('.header').height() ) {
+	if ( $(document).scrollTop() > $('.header').height() ) {
 		$('.gotop').show();
 	}
 	else {
 		$('.gotop').hide();
+	}
+	if ( $(window).width() > 1493 ) {
+		$('.gotop').removeClass('minimized');
+	}
+	else {
+		$('.gotop').addClass('minimized');
 	}
 }
 $(document).ready(function() {
@@ -60,8 +66,10 @@ $(document).ready(function() {
 	if ( $('.filter').length > 0 ) {
 		var rangeFrom = 1750;
 		var rangeTo = 3750;
-		$('.filter .from').val(rangeFrom);
-		$('.filter .to').val(rangeTo);
+		$('.filter .from').attr('data-val', rangeFrom);
+		$('.filter .from').val($('.filter .from').attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
+		$('.filter .to').attr('data-val', rangeTo);
+		$('.filter .to').val($('.filter .to').attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
 		$('.range').slider({
 			range: true,
 			min: 0,
@@ -69,8 +77,10 @@ $(document).ready(function() {
 			step: 50,
 			values: [rangeFrom, rangeTo],
 			slide: function(event, ui) {
-				$('.filter .from').val(ui.values[0]);
-				$('.filter .to').val(ui.values[1]);
+				$('.filter .from').attr('data-val', ui.values[0]);
+				$('.filter .from').val($('.filter .from').attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
+				$('.filter .to').attr('data-val', ui.values[1]);
+				$('.filter .to').val($('.filter .to').attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
 			}
 		});
 		$('.filter .from').change(function() {
@@ -81,6 +91,8 @@ $(document).ready(function() {
 				$(this).val($('.range').slider('values', 1));
 			}
 			$('.range').slider('values', 0, $(this).val());
+			$(this).attr('data-val', $(this).val());
+			$(this).val($(this).attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
 		});
 		$('.filter .to').change(function() {
 			if ( $(this).val() >= $('.range').slider('option', 'max') ) {
@@ -90,6 +102,8 @@ $(document).ready(function() {
 				$(this).val($('.range').slider('values', 0));
 			}
 			$('.range').slider('values', 1, $(this).val());
+			$(this).attr('data-val', $(this).val());
+			$(this).val($(this).attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
 		});
 	}
 	$('.catalog .rb .method ul li').each(function() {
