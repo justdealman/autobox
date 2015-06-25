@@ -68,8 +68,10 @@ $(document).ready(function() {
 		var rangeTo = 3750;
 		$('.filter .from').attr('data-val', rangeFrom);
 		$('.filter .from').val($('.filter .from').attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
+		$('.filter .val-from').val(rangeFrom);
 		$('.filter .to').attr('data-val', rangeTo);
 		$('.filter .to').val($('.filter .to').attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
+		$('.filter .val-to').val(rangeTo);
 		$('.range').slider({
 			range: true,
 			min: 0,
@@ -79,8 +81,10 @@ $(document).ready(function() {
 			slide: function(event, ui) {
 				$('.filter .from').attr('data-val', ui.values[0]);
 				$('.filter .from').val($('.filter .from').attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
+				$('.filter .val-from').val(ui.values[0]);
 				$('.filter .to').attr('data-val', ui.values[1]);
 				$('.filter .to').val($('.filter .to').attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
+				$('.filter .val-to').val(ui.values[1]);
 			}
 		});
 		$('.filter .from').change(function() {
@@ -91,6 +95,7 @@ $(document).ready(function() {
 				$(this).val($('.range').slider('values', 1));
 			}
 			$('.range').slider('values', 0, $(this).val());
+			$(this).parent().find('.val-from').val($(this).val());
 			$(this).attr('data-val', $(this).val());
 			$(this).val($(this).attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
 		});
@@ -102,6 +107,7 @@ $(document).ready(function() {
 				$(this).val($('.range').slider('values', 0));
 			}
 			$('.range').slider('values', 1, $(this).val());
+			$(this).parent().find('.val-to').val($(this).val());
 			$(this).attr('data-val', $(this).val());
 			$(this).val($(this).attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
 		});
