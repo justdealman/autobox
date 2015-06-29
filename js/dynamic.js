@@ -63,7 +63,7 @@ $(document).ready(function() {
 	if ( $('input[type="radio"]').length > 0 ) {
 		$('input[type="radio"]').uniform();
 	}
-	if ( $('.filter').length > 0 ) {
+	if ( $('.filter').length > 0 && $('.filter .range').length > 0 ) {
 		var rangeFrom = 1750;
 		var rangeTo = 3750;
 		$('.filter .from').attr('data-val', rangeFrom);
@@ -306,7 +306,6 @@ $(document).ready(function() {
 	}
 	if ( $('.filter').length > 0 ) {
 		$('.filter input[type="checkbox"]').bind('click', function() {
-			console.log('asdasd');
 			$('.found-bubble p strong').text(Math.floor(Math.random()*1000));
 			$('.found-bubble').css({
 				'left': $(this).parents('li').children('span').offset().left+$(this).parents('li').children('span').outerWidth()+'px',
