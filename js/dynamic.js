@@ -15,12 +15,16 @@ function panel() {
 	else {
 		$('.gotop').hide();
 	}
-	if ( $(window).width() > 1493 ) {
+	$('.gotop').css({
+		'width': $('.wrapper').offset().left+'px',
+		'max-width': $('.gotop p').outerWidth()+'px'
+	});
+	/*if ( $(window).width() > 1493 ) {
 		$('.gotop').removeClass('minimized');
 	}
 	else {
 		$('.gotop').addClass('minimized');
-	}
+	}*/
 }
 $(document).ready(function() {
 	if ( $('.slider').length > 0 ) {

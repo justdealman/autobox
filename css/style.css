@@ -2677,7 +2677,7 @@ h1 {
 	left:0;
 	top:0;
 	z-index:200;
-	width:174px;
+	max-width:174px;
 	height:100%;
 	cursor:pointer;
 	background:rgba(0,0,0,0.1);
@@ -2691,7 +2691,7 @@ h1 {
 }
 .gotop p {
 	position:absolute;
-	right:0;
+	left:0;
 	top:10%;
 	color:#ffffff;
 	font-size:14px;
