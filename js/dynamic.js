@@ -304,6 +304,22 @@ $(document).ready(function() {
 			event.preventDefault();
 		})
 	}
+	if ( $('.filter').length > 0 ) {
+		$('.filter input[type="checkbox"]').bind('click', function() {
+			console.log('asdasd');
+			$('.found-bubble p strong').text(Math.floor(Math.random()*1000));
+			$('.found-bubble').css({
+				'left': $(this).parents('li').children('span').offset().left+$(this).parents('li').children('span').outerWidth()+'px',
+				'top': $(this).parents('li').offset().top+'px'
+			}).show();
+		});
+		$('html').click(function() {
+			$('.found-bubble').hide();
+		});
+		$('.found-bubble, .filter input[type="checkbox"]').click(function(event){
+			event.stopPropagation();
+		});
+	}
 });
 $(window).resize(function() {
 	panel();
