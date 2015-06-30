@@ -1185,7 +1185,6 @@ h1 {
 	border-top-width:0;
 }
 .catalog .filter div.buttons {
-	position:relative;
 	padding:22px 20px 22px;
 }
 .catalog .filter div.buttons button {
@@ -1239,6 +1238,20 @@ h1 {
 .catalog .filter div h4 span {
 	cursor:pointer;
 	border-bottom:1px dashed #000000;
+}
+.catalog .filter div.buttons .reset {
+	float:right;
+	margin:0;
+	background:none;
+	color:#000;
+	cursor: pointer;
+ 	border-bottom: 1px dashed #000000;
+	display:block;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 500;
+	padding: 0;
+	margin: 7px 0 9px;
 }
 .catalog .filter div.buttons h4 {
 	position:absolute;
@@ -3388,7 +3401,7 @@ h1 {
 	z-index:50;
 	text-align:center;
 	padding:14px 31px 4px;
-	margin:-37px 0 0 24px;
+	margin:-37px 0 0 54px;
 	background:#ffffff;
 	-webkit-box-shadow:0 0 25px rgba(0,0,0,0.27);
 	-moz-box-shadow:0 0 25px rgba(0,0,0,0.27);

@@ -312,8 +312,8 @@ $(document).ready(function() {
 		$('.filter input[type="checkbox"]').bind('click', function() {
 			$('.found-bubble p strong').text(Math.floor(Math.random()*1000));
 			$('.found-bubble').css({
-				'left': $(this).parents('li').children('span').offset().left+$(this).parents('li').children('span').outerWidth()+'px',
-				'top': $(this).parents('li').offset().top+'px'
+				'left': $(this).parents('li').children('span').position().left+$(this).parents('li').children('span').outerWidth()+'px',
+				'top': $(this).parents('li').position().top+'px'
 			}).show();
 		});
 		$('html').click(function() {
