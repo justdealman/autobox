@@ -1265,6 +1265,9 @@ h1 {
 }
 .catalog .filter div ul li span {
 	color:#969696;
+	display:inline-block;
+	vertical-align:top;
+	min-width:1px;
 }
 .catalog .filter div h6 {
 	position:relative;
