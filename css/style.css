@@ -3392,7 +3392,6 @@ h1 {
 	-moz-box-shadow:inset 0 1px 5px rgba(0,0,0,0.1);
 	box-shadow:inset 0 1px 5px rgba(0,0,0,0.1);
 }
-
 .contacts-b {
 	width:920px;
 	padding:20px 20px 10px;
@@ -3465,10 +3464,10 @@ h1 {
 }
 .contacts-b .main ul li div {
 	position:absolute;
-	left:-40px;
-	top:-5px;
-	width:27px;
-	height:32px;
+	left:-42px;
+	top:-7px;
+	width:30px;
+	height:36px;
 }
 .contacts-b .main ul li div img {
 	position:absolute;
@@ -3476,8 +3475,8 @@ h1 {
 	right:0;
 	bottom:0;
 	left:0;
-	max-width:27px;
-	max-height:32px;
+	max-width:30px;
+	max-height:36px;
 	margin:auto;
 }
 .contacts-b .main ul li h6 {
@@ -3884,6 +3883,325 @@ h1 {
 }
 .discount-b > h5 a:hover {
 	text-decoration:none;
+}
+.howtobuy-b {
+	width:920px;
+	padding:34px 20px 10px 20px;
+	margin:0 auto 69px;
+	background:#ffffff;
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0.3);
+	box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+.howtobuy-b a {
+	text-decoration:underline;
+}
+.howtobuy-b a:hover {
+	text-decoration:none;
+}
+.howtobuy-b h2 {
+	font-size:44px;
+	line-height:48px;
+	font-weight:normal;
+	text-align:center;
+	padding:0;
+	margin:0 0 39px;
+}
+.howtobuy-b h3 {
+	font-size:41px;
+	line-height:45px;
+	font-weight:normal;
+	text-align:center;
+	padding:0;
+	margin:0 0 13px;
+}
+.howtobuy-b p {
+	font-size:17px;
+	line-height:27px;
+	text-align:center;
+	margin:0 0 20px;
+}
+.howtobuy-b > h5 {
+	font-size:34px;
+	line-height:42px;
+	font-weight:normal;
+	text-align:center;
+	padding:0;
+	margin:20px 0 39px;
+}
+.howtobuy-b > h6 {
+	width:720px;
+	font-size:12px;
+	line-height:15px;
+	font-weight:normal;
+	font-style:italic;
+	padding:0;
+	margin:0 0 9px;
+}
+.howtobuy-b .type1 {
+	width:960px;
+	color:#ffffff;
+	text-align:center;
+	padding:16px 0 25px;
+	margin:0 0 20px -20px;
+	background:url('../img/howtobuy_type1_bg.jpg') no-repeat center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.howtobuy-b .type1 h4 {
+	font-size:34px;
+	line-height:38px;
+	font-weight:normal;
+	padding:0;
+	margin:0 0 23px;
+}
+.howtobuy-b .type1 ul {
+	margin:0;
+}
+.howtobuy-b .type1 ul li {
+	position:relative;
+	display:inline-block;
+	width:270px;
+	vertical-align:top;
+	margin:0 0 0 30px;
+}
+.howtobuy-b .type1 ul li:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:58px;
+	width:139px;
+	height:3px;
+	margin-left:-86px;
+	background:#ffffff;
+}
+.howtobuy-b .type1 ul li:first-child {
+	margin-left:0;
+}
+.howtobuy-b .type1 ul li:first-child:before {
+	display:none;
+}
+.howtobuy-b .type1 ul li div {
+	position:relative;
+	width:160px;
+	height:100px;
+	margin:0 auto 22px;
+}
+.howtobuy-b .type1 ul li div img {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	max-width:160px;
+	max-height:100px;
+	margin:auto;
+}
+.howtobuy-b .type1 ul li p {
+	font-size:19px;
+	line-height:23px;
+	margin:0 0 20px;
+}
+.howtobuy-b .type2 {
+	width:960px;
+	color:#ffffff;
+	text-align:center;
+	padding:16px 0 30px;
+	margin:0 0 20px -20px;
+	background:url('../img/howtobuy_type2_bg.jpg') no-repeat center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+.howtobuy-b .type2 h4 {
+	font-size:34px;
+	line-height:38px;
+	font-weight:normal;
+	padding:0;
+	margin:0 0 25px;
+}
+.howtobuy-b .type2 ul {
+	margin:0;
+}
+.howtobuy-b .type2 ul li {
+	position:relative;
+	display:inline-block;
+	width:220px;
+	vertical-align:top;
+	margin:0 0 0 12px;
+}
+.howtobuy-b .type2 ul li:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:58px;
+	width:88px;
+	height:3px;
+	margin-left:-71px;
+	background:#ffffff;
+}
+.howtobuy-b .type2 ul li:first-child {
+	margin-left:0;
+}
+.howtobuy-b .type2 ul li:first-child:before {
+	display:none;
+}
+.howtobuy-b .type2 ul li div {
+	position:relative;
+	width:160px;
+	height:100px;
+	margin:0 auto 22px;
+}
+.howtobuy-b .type2 ul li div img {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	max-width:160px;
+	max-height:100px;
+	margin:auto;
+}
+.howtobuy-b .type2 ul li p {
+	font-size:15px;
+	line-height:20px;
+	margin:0 0 20px;
+}
+.about-b {
+	width:880px;
+	padding:20px 34px 10px 46px;
+	margin:0 auto 69px;
+	background:#ffffff;
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0.3);
+	box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+.about-b h3 {
+	color:#21395e;
+	font-size:31px;
+	line-height:34px;
+	font-weight:normal;
+	text-align:center;
+	padding:0;
+	margin:0 0 20px;
+}
+.about-b p {
+	font-size:17px;
+	line-height:21px;
+	margin:0 0 21px;
+}
+.about-b h6 {
+	color:#21395e;
+	font-size:21px;
+	line-height:21px;
+	font-weight:normal;
+	padding:0;
+	margin:23px 0 3px;
+}
+.about-b > ul {
+	margin:-21px 0 21px 19px;
+}
+.about-b > ul li {
+	position:relative;
+	font-size:17px;
+	line-height:21px;
+	padding:0 0 0 14px;
+}
+.about-b > ul li:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:8px;
+	width:9px;
+	height:9px;
+	background:url('../img/about_li.png') no-repeat left top;
+}
+.about-b img.right {
+	float:right;
+	margin:-22px 0 17px 30px;
+}
+.about-b > h4 {
+	color:#21395e;
+	font-size:26px;
+	line-height:30px;
+	font-weight:normal;
+	text-align:center;
+	padding:0;
+	margin:-21px 0 38px;
+}
+.about-b > h5 {
+	font-size:16px;
+	line-height:19px;
+	font-weight:normal;
+	font-style:italic;
+	padding:0;
+	margin:0 0 21px;
+}
+.about-b .gallery ul {
+	clear:both;
+	overflow:hidden;
+	margin:0 -50px 10px 0;
+}
+.about-b .gallery ul li {
+	float:left;
+	width:245px;
+	height:178px;
+	padding:10px;
+	margin:0 33px 20px 0;
+	border:1px solid #b6b6b6;
+}
+.about-b .gallery ul li div {
+	overflow:hidden;
+	position:relative;
+	width:245px;
+	height:178px;
+}
+.about-b .gallery ul li div img {
+	position:absolute;
+	left:0;
+	top:0;
+	min-width:245px;
+	min-height:178px;
+}
+
+.about-b .start {
+	position:relative;
+	width:960px;
+	height:251px;
+	margin:-20px 0 12px -46px;
+	background:url('../img/about_start_bg.jpg') no-repeat left top;
+}
+.about-b .start > div {
+	position:absolute;
+	left:22px;
+	top:52px;
+	width:440px;
+	color:#ffffff;
+}
+.about-b .start > div p {
+	font-size:20px;
+	line-height:27px;
+	font-style:italic;
+	margin:0 0 5px;
+}
+.about-b .start > div p strong {
+	display:block;
+	font-size:24px;
+	font-weight:normal;
+}
+.about-b .start > div p span {
+	font-size:32px;
+}
+.about-b .start > div h6 {
+	font-size:26px;
+	line-height:30px;
+	font-weight:normal;
+	text-align:right;
+	padding:0;
+	margin:0 0 5px;
 }
 .found-bubble {
 	display:none;
