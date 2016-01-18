@@ -4248,3 +4248,137 @@ h1 {
 	margin:0 0 12px;
 	background:#ff0000;
 }
+
+.product .information .delivery p span {
+	color:#ff0000;
+	white-space:nowrap;
+	cursor:pointer;
+	text-decoration:underline;
+}
+.store-modal {
+	display:none;
+	position:absolute;
+	left:50%;
+	top:0;
+	z-index:500;
+	width:344px;
+	padding:18px 24px 8px 26px;
+	margin:31px 0 0 -198px;
+	background:#ffffff;
+	border:1px solid #21395e;
+}
+.store-modal:before {
+	content:'';
+	position:absolute;
+	left:50%;
+	top:-11px;
+	width:28px;
+	height:11px;
+	margin-left:-14px;
+	background:url('../img/store_modal_arrow.png') no-repeat center center;
+}
+.store-modal h3 {
+	font-size:16px;
+	line-height:20px;
+	font-weight:500;
+	padding:0;
+	margin:0 0 21px;
+}
+.store-modal h6 {
+	font-size:14px;
+	line-height:18px;
+	font-weight:300;
+	padding:0;
+	margin:-16px 0 21px;
+}
+.store-modal p {
+	font-size:12px;
+	line-height:14px;
+	margin:0 0 16px;
+}
+.store-modal p a {
+	color:#ff0000;
+	text-decoration:underline;
+}
+.store-modal p a:hover {
+	text-decoration:none;
+}
+.store-modal ul {
+	margin:0 0 21px;
+}
+.store-modal ul li {
+	position:relative;
+	padding:0 0 0 140px;
+	margin:0 0 16px;
+}
+.store-modal ul li.address:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:-3px;
+	width:15px;
+	height:20px;
+	background:url('../img/address_store_icon.png') no-repeat center center;
+}
+.store-modal ul li.phone:before {
+	content:'';
+	position:absolute;
+	left:1px;
+	top:-5px;
+	width:13px;
+	height:24px;
+	background:url('../img/address_phone_icon.png') no-repeat center center;
+}
+.store-modal ul li.schedule:before {
+	content:'';
+	position:absolute;
+	left:1px;
+	top:1px;
+	width:13px;
+	height:13px;
+	background:url('../img/address_schedule_icon.png') no-repeat center center;
+}
+.store-modal ul li h5 {
+	position:absolute;
+	left:26px;
+	top:0;
+	max-width:100px;
+	font-size:12px;
+	line-height:14px;
+	font-weight:500;
+	padding:0;
+	margin:0;
+}
+.store-modal ul li p {
+	position:relative;
+	font-size:12px;
+	line-height:14px;
+	font-weight:300;
+	margin:0;
+}
+.store-modal ul li p span {
+	position:absolute;
+	left:46px;
+	top:0;
+	display:block;
+}
+.product .information .options h5 span {
+	position:relative;
+	color:#737373;
+	font-size:18px;
+	margin-left:13px;
+}
+.product .information .options h5 span:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:10px;
+	width:100%;
+	height:1px;
+	background:#737373;
+}
+.product .information .options h5 span sup {
+	font-size:10px;
+	line-height:10px;
+	margin:11px 0 0 3px;
+}

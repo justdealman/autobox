@@ -323,6 +323,23 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 	}
+	$('[data-store]').bind('click', function(e) {
+		e.preventDefault();
+		var t = $('[data-store-modal="'+$(this).attr('data-store')+'"]');
+		if ( t.is(':hidden') ) {
+			$('.store-modal').hide();
+			$('[data-store-modal="'+$(this).attr('data-store')+'"]').css({
+				'top': $(this).offset().top+'px',
+				'left': $(this).offset().left+$(this).outerWidth()/2+'px'
+			}).stop().fadeIn(100);
+		}
+	});
+	$('html').click(function() {
+		$('.store-modal').hide();
+	})
+	$('.store-modal, [data-store]').click(function(e) {
+		e.stopPropagation();
+	});
 });
 $(window).resize(function() {
 	panel();
