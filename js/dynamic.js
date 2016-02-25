@@ -116,11 +116,11 @@ $(document).ready(function() {
 			$(this).val($(this).attr('data-val').toString().replace(/\B(?=(\d{3})+(?!\d))/g, " "));
 		});
 	}
-	$('.catalog .rb .method ul li').each(function() {
+	$('.method ul li').each(function() {
 		$(this).prepend('<span class="down"></span>');
 		$(this).prepend('<span class="up"></span>');
 	});
-	$('.catalog .rb .method ul li a').bind('click', function() {
+	$('.method ul li a').bind('click', function() {
 		if ( $(this).parent().hasClass('active') ) {
 			$(this).parent().find('span.active').removeClass('active').siblings().addClass('active');
 		}
@@ -130,7 +130,7 @@ $(document).ready(function() {
 		}
 		return false;
 	});
-	$('.catalog .rb .method ul li span').bind('click', function() {
+	$('.method ul li span').bind('click', function() {
 		$(this).addClass('active').siblings('span').removeClass('active');
 	});
 	$('.catalog .rb .view ul li a').bind('click', function() {
