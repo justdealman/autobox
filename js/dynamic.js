@@ -38,6 +38,17 @@ $(document).ready(function() {
 			pause: 2500
 		});
 	}
+	if ( $('.slide-sub').length > 0 ) {
+		$('.slide-sub').slides({
+			generatePagination: true,
+			generateNextPrev: false,
+			container: 'container',
+			effect: 'slide',
+			slideSpeed: 500,
+			play: 10000,
+			pause: 2500
+		});
+	}
 	$('.clear').css({
 		'height': $('.footer').outerHeight()+'px'
 	});

@@ -129,9 +129,25 @@
 					</ul>
 				</div>
 			</div>
-			<div class="map">
-				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Nl2ycmDTnjXNjgwbHbnARWWXt5Wmyj-Y&width=894&height=374&lang=ru_RU&sourceType=constructor"></script>
-			</div>
+			<div id="map"></div>
+			<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+			<script>
+				ymaps.ready(function() {
+					var map = new ymaps.Map('map', {
+						center: [53.3404,83.7259],
+						zoom: 14
+					}),
+					mark1 = new ymaps.Placemark([53.3412,83.7183], {}, {
+						preset: 'islands#dotIcon',
+						iconColor: 'red'
+					});
+					mark2 = new ymaps.Placemark([53.3394,83.7440], {}, {
+						preset: 'islands#dotIcon',
+						iconColor: 'red'
+					});
+					map.geoObjects.add(mark1).add(mark2);
+				});
+			</script>
 			<div class="more">
 				<p><span>«УДОБНЫЙ РЕЖИМ РАБОТЫ»</span> - магазин может быть открыт в любое удобное для Вас время, в праздничные дни, по предварительному согласованию с менеджерами компании! </p>
 				<p><span><a href="#">Перейти</a></span> в раздел с реквизитами компании.</p>
