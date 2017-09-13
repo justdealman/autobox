@@ -146,18 +146,6 @@ button::-moz-focus-inner {
 	padding:0;
 	border:0;
 }
-::-webkit-input-placeholder {
-	color:#c6c6c1;
-}
-:-moz-placeholder {
-	color:#c6c6c1;
-}
-::-moz-placeholder {
-	color:#c6c6c1;
-}
-:-ms-input-placeholder {
-	color:#c6c6c1;
-}
 .wrapper {
 	overflow:hidden;
 	position:relative;
@@ -298,7 +286,7 @@ button::-moz-focus-inner {
 	color:#ffffff;
 	font-size:16px;
 	line-height:20px;
-	font-weight:300;
+	font-weight:normal;
 	white-space:nowrap;
 	padding:0;
 	margin:0 -480px 0 0;
@@ -306,11 +294,30 @@ button::-moz-focus-inner {
 .panel h5:before {
 	content:url('../img/basket_icon.png');
 	position:absolute;
-	left:-35px;
+	left:-41px;
 	top:1px;
+}
+.panel h5 span {
+	position:absolute;
+	left:-23px;
+	top:-9px;
+	display:block;
+	min-width:20px;
+	height:20px;
+	font-size:12px;
+	line-height:15px;
+	padding:2px 2px 3px;
+	text-align:center;
+	background:#ff0000;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
 }
 .panel h5 a {
 	color:#ffffff;
+	font-weight:300;
 	margin:0 0 0 4px;
 	border-bottom:1px solid #ffffff;
 }
@@ -326,7 +333,7 @@ button::-moz-focus-inner {
 	position:absolute;
 	left:50%;
 	top:10px;
-	width:275px;
+	width:388px;
 	height:30px;
 	margin-left:-138px;
 	background:#ffffff;
@@ -339,8 +346,8 @@ button::-moz-focus-inner {
 }
 .panel .search p input {
 	width:100%;
-	font-size:12px;
-	padding:8px 10px 9px;
+	font-size:14px;
+	padding:7px 10px 8px;
 }
 .panel .search button {
 	position:absolute;
