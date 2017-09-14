@@ -351,6 +351,7 @@ $(document).ready(function() {
 	$('.store-modal, [data-store]').click(function(e) {
 		e.stopPropagation();
 	});
+	$('.select-sort').selectric();
 });
 $(window).resize(function() {
 	panel();
