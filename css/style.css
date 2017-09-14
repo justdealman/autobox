@@ -4783,3 +4783,72 @@ h1 {
 .selectric-items .selectric-group li {
 	padding-left:25px;
 }
+.pages-e {
+	position:relative;
+	font-size:0;
+	text-align:center;
+	padding-left:44px;
+	margin:0 0 20px;
+}
+.pages-e ul {
+	display:inline-block;
+	vertical-align:top;
+	margin:0;
+}
+.pages-e ul li {
+	display:inline-block;
+	font-size:23px;
+	line-height:26px;
+	padding:0 5px;
+}
+.pages-e ul .prev,
+.pages-e ul .next {
+	font-size:19px;
+	margin:0 3px;
+}
+.pages-e ul a:hover {
+	text-decoration:underline;
+}
+.pages-e ul .active {
+	color:#ff0000;
+}
+.pages-e .count {
+	position:absolute;
+	left:0;
+	bottom:4px;
+	font-size:16px;
+	line-height:20px;
+	margin:0;
+}
+.pages-e .show-all {
+	position:absolute;
+	right:0;
+	bottom:4px;
+	display:block;
+	font-size:16px;
+	line-height:20px;
+	margin:0;
+}
+.pages-e .show-all:hover {
+	text-decoration:underline;
+}
+.item-label {
+	position:absolute;
+	left:-50px;
+	top:86px;
+	z-index:2;
+	display:block;
+	width:192px;
+	height:27px;
+	color:#ffffff;
+	font-size:15px;
+	line-height:27px;
+	text-align:center;
+	background:#ff0000;
+	transform-origin:left top;
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.catalog .grid li > div:hover .item-label {
+	margin:10px 0 0 10px;
+}
