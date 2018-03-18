@@ -372,7 +372,21 @@ $(document).ready(function() {
 	$('.store-modal, [data-store]').click(function(e) {
 		e.stopPropagation();
 	});
-	$('.select-sort').selectric();
+	$('.select-sort, .select-new').selectric();
+	function setDeliveryItem(e) {
+		$('.delivery-e__item[data="'+e+'"]').addClass('is-active').siblings('.delivery-e__item').removeClass('is-active');
+		$('.basket-e__tip[data-tip="'+e+'"]').addClass('is-active').siblings('.basket-e__tip').removeClass('is-active');
+	}
+	$('input[name="delivery-radio"]').on('change', function() {
+		var t = $(this).parents('.delivery-e__item').attr('data');
+		setDeliveryItem(t);
+	});
+	$('input[name="delivery-radio"]').each(function() {
+		if ( $(this).prop('checked') == 1 ) {
+			var t = $(this).parents('.delivery-e__item').attr('data');
+			setDeliveryItem(t);
+		}
+	});
 });
 $(window).resize(function() {
 	panel();
