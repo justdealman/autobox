@@ -28,8 +28,8 @@
 				</li>
 			</ul>
 			<ul class="user">
-				<li><a href="#">Регистрация</a></li>
-				<li><a href="#">Вход</a></li>
+				<li><a href="#" data-target="registration">Регистрация</a></li>
+				<li><a href="#" data-target="login">Вход</a></li>
 			</ul>
 		</div>
 		<div class="panel">
@@ -322,6 +322,95 @@
 	</div>
 	<div class="gotop">
 		<p>Наверх</p>
+	</div>
+	<div class="fade"></div>
+	<div class="modal modal_user" data-modal="registration">
+		<span class="modal--title">Регистрация</span>
+		<div class="modal__content">
+			<div class="form__item">
+				<label class="form__item--label">Адрес электронной почты (e-mail) <span>*</span></label>
+				<div class="form__item--input form__item--input_complete">
+					<input type="text" value="registration_1983@gmail.com">
+				</div>
+			</div>
+			<div class="form__item">
+				<label class="form__item--label">Пароль <span>*</span></label>
+				<div class="form__item--input">
+					<input type="password" placeholder="не менее 6 символов">
+				</div>
+				<span class="form__item--tip">Пароли не совпадают</span>
+			</div>
+			<div class="form__item">
+				<label class="form__item--label">Подтвердить пароль <span>*</span></label>
+				<div class="form__item--input form__item--input_error">
+					<input type="password" value="********">
+				</div>
+				<span class="form__item--tip">Пароли не совпадают</span>
+			</div>
+			<span class="modal--agreement">Нажимая кнопку «Зарегистрироваться»,  Вы соглашаетесь с <a href="#">условиями политики конфиденциальности</a></span>
+			<button class="modal--button" data-target="registration-complete">Зарегистрироваться</button>
+			<span class="modal--additional"><a href="#" data-target="login">Войти в личный кабинет</a></span>
+		</div>
+	</div>
+	<div class="modal modal_user" data-modal="registration-complete">
+		<span class="modal--title">Спасибо за регистрацию</span>
+		<div class="modal__content">
+			<i class="modal--check"></i>
+			<div class="modal__info">
+				<span class="modal__info--title">Регистрация завершена!</span>
+				<p>На адрес электронной почты <strong>registration_1983@gmail.com</strong> отправлено письмо с регистрационными данными.</p>
+			</div>
+			<span class="modal--payment">Добавьте реквизиты Вашей организации и оплачивайте счета по безналичному расчету!</span>
+			<button class="modal--button" data-target="login">Войти</button>
+		</div>
+	</div>
+	<div class="modal modal_user" data-modal="login">
+		<span class="modal--title">Войти в личный кабинет</span>
+		<div class="modal__content">
+			<div class="form__item">
+				<label class="form__item--label">Адрес электронной почты (e-mail)</label>
+				<div class="form__item--input">
+					<input type="text" value="registration_1983@gmail.com">
+				</div>
+			</div>
+			<div class="form__item">
+				<label class="form__item--label">Пароль</label>
+				<div class="form__item--input">
+					<input type="password" placeholder="не менее 6 символов">
+				</div>
+				<span class="form__item--recover"><a href="#" data-target="recover">Забыли пароль?</a></span>
+			</div>
+			<span class="modal--warning">Неверный логин или пароль</span>
+			<span class="modal--message">Для всех зарегистрированных клиентов действует <a href="#">система скидок</a>, все заказы сохранятся в личном кабинете.</span>
+			<button class="modal--button">Войти</button>
+			<span class="modal--additional" data-target="registration"><a href="#">Регистрация</a></span>
+		</div>
+	</div>
+	<div class="modal modal_user" data-modal="recover">
+		<span class="modal--title">Восстановление пароля</span>
+		<div class="modal__content">
+			<i class="modal--recover_icon"></i>
+			<div class="form__item">
+				<label class="form__item--label">Для восстановления пароля введите указанный при регистрации адрес электронной почты</label>
+				<div class="form__item--input">
+					<input type="text" value="abc@gmail.com">
+				</div>
+			</div>
+			<span class="modal--warning">E-mail не зарегистрирован</span>
+			<span class="modal--message">Не получается восстановить пароль?<br> <a href="#">Позвоните нам</a> и наши сотрудники помогут Вам.</span>
+			<button class="modal--button" data-target="recover-complete">Восстановить</button>
+		</div>
+	</div>
+	<div class="modal modal_user" data-modal="recover-complete">
+		<span class="modal--title">Восстановление пароля</span>
+		<div class="modal__content">
+			<i class="modal--check"></i>
+			<div class="modal__info">
+				<span class="modal__info--title" align="center">Выполнено!</span>
+				<p>На адрес электронной почты <strong>registration_1983@gmail.com</strong> отправлено письмо с регистрационными данными.</p>
+			</div>
+			<button class="modal--button" data-target="login">Войти в личный кабинет</button>
+		</div>
 	</div>
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/jquery-ui.js"></script>
