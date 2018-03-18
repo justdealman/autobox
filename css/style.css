@@ -310,10 +310,10 @@ button::-moz-focus-inner {
 	margin:0 -480px 0 0;
 }
 .panel h5:before {
-	content:url('../img/basket_icon.png');
+	content:url('../img/basket_icon-new.png');
 	position:absolute;
 	left:-41px;
-	top:1px;
+	top:0;
 }
 .panel h5 span {
 	position:absolute;
