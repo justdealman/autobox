@@ -5552,6 +5552,10 @@ h1.noborder {
 	line-height:22px !important;
 	padding:9px 12px 7px;
 }
+.selectric-select-new .selectric-items li:hover {
+	color:#21395e;
+	background-color:#f5f5f5;
+}
 .delivery-e__content input {
 	width:475px;
 	font-size:19px;
@@ -5658,4 +5662,61 @@ h1.noborder {
 }
 .basket-e__tip--content a:hover {
 	text-decoration:none;
+}
+.form__item {
+	max-width:331px;
+}
+.form__item_address {
+	max-width:474px;
+}
+.delivery-e__item .form__item {
+	margin:0 0 12px;
+}
+.delivery-e__item .form__item--tip {
+	padding:0 0 6px;
+}
+.form__item_inline {
+	display:inline-block;
+	width:149px;
+}
+.delivery-e__item .form__item_inline {
+	margin-right:31px;
+}
+.delivery-e__item .form__item input {
+	width:100%;
+}
+.delivery-e--login {
+	display:block;
+	font-size:14px;
+	line-height:17px;
+	margin:-8px 0 11px;
+}
+.delivery-e--login a {
+	color:#ff0000;
+	text-decoration:underline;
+}
+.delivery-e--login a:hover {
+	text-decoration:none;
+}
+.delivery-e--agreement {
+	display:block;
+	font-size:11px;
+	line-height:14px;
+	text-align:right;
+	margin:-10px 0 13px;
+}
+.delivery-e--agreement a {
+	color:#21395f;
+}
+.delivery-e--agreement a:hover {
+	text-decoration:underline;
+}
+.delivery-e--company-add {
+	display:block;
+	color:#21395e;
+	font-size:14px;
+	line-height:17px;
+	margin:0 0 13px;
+}
+.selectric-select-new {
 }

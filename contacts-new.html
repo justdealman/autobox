@@ -56,34 +56,73 @@
 						<span class="delivery-e--title">Оформление заказа</span>
 						<ul class="delivery-e__nav">
 							<li class="is-active"><a href="#">Способ получения</a></li>
-							<li><span>Контактная информация</span></li>
+							<li class="is-active"><a href="#">Контактная информация</a></li>
 							<li><span>Способ оплаты</span></li>
 							<li><span>Заказ отправлен</span></li>
 						</ul>
-						<span class="delivery-e--subtitle">Выберите способ получения товара</span>
+						<span class="delivery-e--login">Если вы зарегистрированы на сайте, <a href="#">войдите</a> и Вам не придётся заполнять контактную информацию,<br> а заказ сохранится в личном кабинете.</span>
+						<span class="delivery-e--subtitle">Контактная информация</span>
 						<div class="delivery-e__list">
 							<div class="delivery-e__item" data="1">
-								<label class="delivery-e__item--label"><input type="radio" name="delivery-radio" checked>Самовывоз из магазина</label>
+								<label class="delivery-e__item--label"><input type="radio" name="delivery-radio">Физическое лицо</label>
 								<div class="delivery-e__content">
-									<select class="select-new">
-										<option>г. Барнаул, ул. Власихинская, 57ж</option>
-										<option>г. Бийск, ул. В. Шишкова, 37а</option>
-										<option>г. Барнаул, Павловский тр-т, 54б</option>
-									</select>
+									<div class="form__item">
+										<label class="form__item--label">Обращение (имя) <span>*</span></label>
+										<div class="form__item--input form__item--input_complete">
+											<input type="text" value="Николай">
+										</div>
+									</div>
+									<div class="form__item">
+										<label class="form__item--label">Номер телефона <span>*</span></label>
+										<div class="form__item--input">
+											<input type="text" placeholder="+7 (___) ___ - ____">
+										</div>
+										<span class="form__item--tip">Введите корректный номер телефона</span>
+									</div>
 								</div>
 							</div>
 							<div class="delivery-e__item" data="2">
-								<label class="delivery-e__item--label"><input type="radio" name="delivery-radio">Доставка по адресу (для г. Барнаул, г. Бийск, г. Новоалтайск)</label>
+								<label class="delivery-e__item--label"><input type="radio" name="delivery-radio" checked>Юридическое лицо</label>
 								<div class="delivery-e__content">
-									<input type="text" placeholder="Например, Барнаул, Малахова 79">
-									<span class="delivery-e__content--tip">После оформления заказа с Вами свяжется менеджер</span>
-								</div>
-							</div>
-							<div class="delivery-e__item" data="3">
-								<label class="delivery-e__item--label"><input type="radio" name="delivery-radio">Отправка транспортной компанией (по территории РФ)</label>
-								<div class="delivery-e__content">
-									<input type="text" placeholder="Например, Новокузнецк, Ленина 16">
-									<span class="delivery-e__content--tip">После оформления заказа с Вами свяжется менеджер</span>
+									<div class="form__item">
+										<label class="form__item--label">Название компании <span>*</span></label>
+										<select class="select-new">
+											<option>ООО «АльянсАвто»</option>
+											<option>ООО «АльянсАвто-Бийск»</option>
+										</select>
+									</div>
+									<span class="delivery-e--company-add">На данный момент у Вас нет добавленных организаций.<br> Заполните реквизиты компании и они сохранятся для следующих заказов.</span>
+									<div class="form__item">
+										<label class="form__item--label">Название компании <span>*</span></label>
+										<div class="form__item--input">
+											<input type="text" placeholder="Например: ООО «Авто-Мир»">
+										</div>
+									</div>
+									<div class="form__item form__item_inline">
+										<label class="form__item--label">ИНН <span>*</span></label>
+										<div class="form__item--input">
+											<input type="text">
+										</div>
+									</div>
+									<div class="form__item form__item_inline">
+										<label class="form__item--label">КПП</label>
+										<div class="form__item--input">
+											<input type="text">
+										</div>
+									</div>
+									<div class="form__item">
+										<label class="form__item--label">Номер телефона <span>*</span></label>
+										<div class="form__item--input">
+											<input type="text" placeholder="+7 (___) ___ - ____">
+										</div>
+										<span class="form__item--tip">Введите корректный номер телефона</span>
+									</div>
+									<div class="form__item form__item_address">
+										<label class="form__item--label">Юридический адрес</span></label>
+										<div class="form__item--input">
+											<input type="text" placeholder="Например: 656000 г. Камень-на-Оби, ул. Демьяна Бедного, 31">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -91,6 +130,7 @@
 							<button class="delivery-e--button delivery-e--button_transparent">Назад в корзину</button>
 							<button class="delivery-e--button">Далее</button>
 						</div>
+						<span class="delivery-e--agreement">Нажимая кнопку "Далее", Вы соглашаетесь c <a href="#">условиями политики конфиденциальности</a></span>
 					</div>
 				</div>
 				<div class="basket-e__rc basket-e__rc_nopadding">
@@ -103,13 +143,10 @@
 						</ul>
 					</div>
 					<div class="basket-e__tip" data-tip="1">
-						<span class="basket-e__tip--content">Заказ хранится в пункте самовывоза 3 дня</span>
+						<span class="basket-e__tip--content">Подсказка для физика</span>
 					</div>
 					<div class="basket-e__tip" data-tip="2">
-						<span class="basket-e__tip--content"><i>Бесплатная доставка<br> от 2500 Р <a href="#">подробнее</a></i></span>
-					</div>
-					<div class="basket-e__tip" data-tip="3">
-						<span class="basket-e__tip--content"><i>Отправка компаниями ПЭК, Деловые лини, РАТЭК и др. <a href="#">подробнее</a></i></span>
+						<span class="basket-e__tip--content">Подсказка для юрика</span>
 					</div>
 				</div>
 			</div>
