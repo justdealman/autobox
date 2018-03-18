@@ -5556,13 +5556,18 @@ h1.noborder {
 	color:#21395e;
 	background-color:#f5f5f5;
 }
-.delivery-e__content input {
+.delivery-e__content input,
+.delivery-e__content textarea {
 	width:475px;
 	font-size:19px;
 	line-height:22px;
 	font-family:'Myriad Pro', sans-serif;
 	padding:9px 12px 7px;
 	border:1px solid #696969;
+}
+.delivery-e__content textarea {
+	resize:vertical;
+	width:100%;
 }
 .delivery-e__content--tip {
 	display:block;
@@ -5718,5 +5723,79 @@ h1.noborder {
 	line-height:17px;
 	margin:0 0 13px;
 }
-.selectric-select-new {
+.delivery-e__comment {
+	max-width:331px;
+}
+.delivery-e__comment--label {
+	display:block;
+	font-size:19px;
+	line-height:22px;
+	margin:0 0 -1px;
+}
+.delivery-e--payment-pic {
+	margin:0 0 15px;
+}
+.delivery-e--payment-message {
+	display:block;
+	color:#21395f;
+	font-size:19px;
+	line-height:24px;
+	margin:0 0 12px;
+}
+.delivery-e__complete {
+	position:relative;
+	padding:46px 0 0 163px;
+}
+.delivery-e__complete:before {
+	content:'';
+	position:absolute;
+	left:21px;
+	top:30px;
+	width:88px;
+	height:83px;
+	background:url('../img/modal-check-icon.png') no-repeat 0 0;
+	background-size:100% 100%;
+}
+.delivery-e__complete--title {
+	display:block;
+	font-size:29px;
+	line-height:32px;
+	padding:0;
+	margin:0 0 10px;
+}
+.delivery-e__complete--thanks {
+	display:block;
+	font-size:27px;
+	line-height:30px;
+	padding:0;
+	margin:9px 0 2px;
+}
+.delivery-e__complete p {
+	font-size:14px;
+	line-height:18px;
+	margin:0 0 2px;
+}
+.delivery-e__complete a {
+	color:#21395e;
+	text-decoration:underline;
+}
+.delivery-e__complete a:hover {
+	text-decoration:none;
+}
+.delivery-e__complete + .delivery-e__controls {
+	margin-top:-8px;
+}
+.delivery-e__complete ul {
+	margin:14px 0 2px;
+}
+.delivery-e__complete li {
+	font-size:14px;
+	line-height:18px;
+}
+.delivery-e__complete li span {
+	color:#727272;
+}
+.delivery-e__complete hr {
+	height:78px;
+	border:0;
 }
