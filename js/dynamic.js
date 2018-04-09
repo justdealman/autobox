@@ -374,16 +374,17 @@ $(document).ready(function() {
 	});
 	$('.select-sort, .select-new').selectric();
 	function setDeliveryItem(e) {
-		$('.delivery-e__item[data="'+e+'"]').addClass('is-active').siblings('.delivery-e__item').removeClass('is-active');
-		$('.basket-e__tip[data-tip="'+e+'"]').addClass('is-active').siblings('.basket-e__tip').removeClass('is-active');
+		var t = e.parents('.delivery-e__list');
+		t.find('.delivery-e__item[data="'+e.attr('data')+'"]').addClass('is-active').siblings('.delivery-e__item').removeClass('is-active');
+		$('.basket-e__tip[data-tip="'+e.attr('data')+'"]').addClass('is-active').siblings('.basket-e__tip').removeClass('is-active');
 	}
 	$('input[name="delivery-radio"]').on('change', function() {
-		var t = $(this).parents('.delivery-e__item').attr('data');
+		var t = $(this).parents('.delivery-e__item');
 		setDeliveryItem(t);
 	});
 	$('input[name="delivery-radio"]').each(function() {
 		if ( $(this).prop('checked') == 1 ) {
-			var t = $(this).parents('.delivery-e__item').attr('data');
+			var t = $(this).parents('.delivery-e__item');
 			setDeliveryItem(t);
 		}
 	});
