@@ -53,29 +53,57 @@
 			<div class="personal__lc">
 				<span class="personal__lc--title">Николай</span>
 				<ul class="personal__nav">
-					<li class="is-active"><a href="#"><i class="personal__nav--icon personal__nav--icon_1"></i>Мои заказы</a></li>
-					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_2"></i>Личные данные</a></li>
+					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_1"></i>Мои заказы</a></li>
+					<li class="is-active"><a href="#"><i class="personal__nav--icon personal__nav--icon_2"></i>Личные данные</a></li>
 					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_3"></i>Реквизиты компании</a></li>
 				</ul>
 			</div>
 			<div class="personal__rc">
-				<span class="personal__rc--title"><a href="#">Мои заказы</a></span>
-				<table class="personal__table">
-					<thead>
-						<tr>
-							<th>Номер</th>
-							<th>Дата</th>
-							<th>Сумма</th>
-							<th>Статус</th>
-							<th>Счет</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td colspan="5" align="center">Нет заказов</td>
-						</tr>
-					</tbody>
-				</table>
+				<span class="personal__rc--title">Личные данные</span>
+				<div class="personal-form">
+					<div class="personal-form__item">
+						<label class="personal-form--label">Обращение (имя) <i>*</i></label>
+						<div class="personal-form--input">
+							<input type="text" value="Николай">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item">
+						<label class="personal-form--label">Фамилия</label>
+						<div class="personal-form--input">
+							<input type="text" value="Авдеев">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item">
+						<label class="personal-form--label">Номер телефона</label>
+						<div class="personal-form--input">
+							<input type="text" value="+7-960-966-1111">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item">
+						<label class="personal-form--label">Электронная почта (логин)</label>
+						<div class="personal-form--input">
+							<input type="text" value="avdeevnick@gmail.com">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item">
+						<label class="personal-form--label">Пароль</label>
+						<div class="personal-form--input">
+							<input type="password" value="password">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item personal-form__item_control">
+						<button class="personal--button">Сохранить</button>
+					</div>
+				</div>
+				<div class="personal-photo">
+					<img src="./pic/photo-dummy.png" width="149" height="159" class="img-contain" alt="">
+				</div>
+				<span class="personal-form--agreement">Нажимая кнопку "Сохранить", Вы соглашаетесь c <a href="#">условиями политики конфиденциальности</a></span>
 			</div>
 		</div>
 		<div class="clear"></div>
@@ -137,6 +165,7 @@
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/jquery-ui.js"></script>
 	<script type="text/javascript" src="./js/jcarousel.js"></script>
+	<script type="text/javascript" src="./js/selectric.js"></script>
 	<script type="text/javascript" src="./js/slides.js"></script>
 	<script type="text/javascript" src="./js/uniform.js"></script>
 	<script type="text/javascript" src="./js/dynamic.js"></script>

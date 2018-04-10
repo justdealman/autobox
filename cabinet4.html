@@ -46,43 +46,40 @@
 		</div>
 		<ul class="breadrumbs">
 			<li><a href="#">Главная</a></li>
-			<li>Персональный раздел</li>
+			<li>Личный кабинет</li>
 		</ul>
-		<h1>Личный кабинет</h1>
+		<h1 class="noborder">Личный кабинет</h1>
 		<div class="personal">
-			<ul class="nav">
-				<li><a href="#">Личные данные</a></li>
-				<li><a href="#">Мои заказы</a></li>
-				<li><a href="#">Отложенные товары</a></li>
-				<li class="active"><a href="#">Реквизиты компании</a></li>
-				<li><a href="#">Моя скидка</a></li>
-			</ul>
-			<div class="core">
-				<h2>Реквизиты компании</h2>
-				<div class="data">
-					<div>
-						<h5><input type="checkbox"> ООО «АльянсАвто»</h5>
-						<p><a href="#">изменить данные</a></p>
-					</div>
-					<div>
-						<h5><input type="checkbox"> ООО «Автосервис»</h5>
-						<p><a href="#">добавить юр. лицо</a></p>
-					</div>
-				</div>
-				<h2>Добавление юридического лица</h2>
-				<div class="form">
-					<p><span>Название организации:</span> <input type="text"></p>
-					<p><span>ИНН:</span> <input type="text"></p>
-					<p><span>КПП:</span> <input type="text"></p>
-					<p><span>Юридический адрес:</span> <input type="text"></p>
-					<p><span>Почтовый адрес:</span> <input type="text"></p>
-					<p><span>Номер телефона:</span> <input type="text"></p>
-					<p><span>БИК банка:</span> <input type="text"></p>
-					<p><span>Название банка:</span> <input type="text"></p>
-					<p><span>Корреспондентский счет:</span> <input type="text"></p>
-					<p><span>Расчетный счет:</span> <input type="text"></p>
-					<p><span>ОГРН:</span> <input type="text"></p>
-					<button>Сохранить</button>
+			<div class="personal__lc">
+				<span class="personal__lc--title">Николай</span>
+				<ul class="personal__nav">
+					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_1"></i>Мои заказы</a></li>
+					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_2"></i>Личные данные</a></li>
+					<li class="is-active"><a href="#"><i class="personal__nav--icon personal__nav--icon_3"></i>Реквизиты компании</a></li>
+				</ul>
+			</div>
+			<div class="personal__rc">
+				<span class="personal__rc--title">Реквизиты компании</span>
+				<table class="personal__table">
+					<thead>
+						<tr>
+							<th>Название</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#">ООО «АльянсАвто»</a></td>
+							<td align="right"><button class="personal__table--remove"></button></td>
+						</tr>
+						<tr>
+							<td><a href="#">ИП Бойко Игорь Сергеевич</a></td>
+							<td align="right"><button class="personal__table--remove"></button></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="personal__controls">
+					<button class="personal--button">Добавить</button>
 				</div>
 			</div>
 		</div>

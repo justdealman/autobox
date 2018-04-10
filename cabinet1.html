@@ -46,47 +46,68 @@
 		</div>
 		<ul class="breadrumbs">
 			<li><a href="#">Главная</a></li>
-			<li>Персональный раздел</li>
+			<li>Личный кабинет</li>
 		</ul>
-		<h1>Личный кабинет</h1>
+		<h1 class="noborder">Личный кабинет</h1>
 		<div class="personal">
-			<ul class="nav">
-				<li class="active"><a href="#">Личные данные</a></li>
-				<li><a href="#">Мои заказы</a></li>
-				<li><a href="#">Отложенные товары</a></li>
-				<li><a href="#">Реквизиты компании</a></li>
-				<li><a href="#">Моя скидка</a></li>
-			</ul>
-			<div class="core">
-				<h2>Личные данные</h2>
-				<div class="data">
-					<div>
-						<p>ФИО:</p>
-						<p>Авдеев Николай</p>
-					</div>
-					<div>
-						<p>Адрес доставки:</p>
-						<p>Барнаул, Гущина 153</p>
-					</div>
-					<div>
-						<p>Номер телефона:</p>
-						<p>+7 960 966 1111</p>
-					</div>
-					<div>
-						<p>Email:</p>
-						<p>avdeevnick@gmail.com</p>
-					</div>
-					<div>
-						<p>Логин:</p>
-						<p>avdeev</p>
-					</div>
-					<div>
-						<p>Пароль:</p>
-						<p>******</p>
-					</div>
-				</div>
-				<h6 class="edit"><a href="#">редактировать личные данные</a></h6>
-				<p class="note">для того, чтобы приобрести товар по безналичному расчету (включая НДС), Вам необходимо перейти в раздел <a href="#">Реквизиты компании</a> и заполнить реквизиты Вашей компании, почле чего вы сможете получать счета на оплату</p>
+			<div class="personal__lc">
+				<span class="personal__lc--title">Николай</span>
+				<ul class="personal__nav">
+					<li class="is-active"><a href="#"><i class="personal__nav--icon personal__nav--icon_1"></i>Мои заказы</a></li>
+					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_2"></i>Личные данные</a></li>
+					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_3"></i>Реквизиты компании</a></li>
+				</ul>
+			</div>
+			<div class="personal__rc">
+				<span class="personal__rc--title"><a href="#">Мои заказы</a></span>
+				<table class="personal__table">
+					<thead>
+						<tr>
+							<th>Номер</th>
+							<th>Дата</th>
+							<th>Сумма</th>
+							<th>Статус</th>
+							<th>Счет</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="is-hoverable">
+							<td>N000085</td>
+							<td>07.02.2018</td>
+							<td>22 200 руб</td>
+							<td>Принят</td>
+							<td>...</td>
+						</tr>
+						<tr class="is-hoverable">
+							<td>N000081</td>
+							<td>04.02.2018</td>
+							<td>20 540 руб</td>
+							<td>Готов к выдаче</td>
+							<td><a href="#" class="pdf-icon"></a></td>
+						</tr>
+						<tr class="is-hoverable">
+							<td>N000076</td>
+							<td>15.01.2018</td>
+							<td>1 240 руб</td>
+							<td>Отгружен частично</td>
+							<td><a href="#" class="pdf-icon"></a></td>
+						</tr>
+						<tr class="is-hoverable">
+							<td>N000074</td>
+							<td>15.01.2018</td>
+							<td>1 240 руб</td>
+							<td>Отгружен полностью</td>
+							<td><a href="#" class="pdf-icon"></a></td>
+						</tr>
+						<tr class="is-hoverable">
+							<td>N000055</td>
+							<td>12.01.2018</td>
+							<td>1 912 240 руб</td>
+							<td>Отменен</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		<div class="clear"></div>

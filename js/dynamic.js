@@ -388,6 +388,9 @@ $(document).ready(function() {
 			setDeliveryItem(t);
 		}
 	});
+	$('.personal-form--edit').on('click', function() {
+		$(this).siblings('input, textarea').focus();
+	});
 });
 $(window).resize(function() {
 	panel();

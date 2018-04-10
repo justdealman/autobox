@@ -53,29 +53,62 @@
 			<div class="personal__lc">
 				<span class="personal__lc--title">Николай</span>
 				<ul class="personal__nav">
-					<li class="is-active"><a href="#"><i class="personal__nav--icon personal__nav--icon_1"></i>Мои заказы</a></li>
+					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_1"></i>Мои заказы</a></li>
 					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_2"></i>Личные данные</a></li>
-					<li><a href="#"><i class="personal__nav--icon personal__nav--icon_3"></i>Реквизиты компании</a></li>
+					<li class="is-active"><a href="#"><i class="personal__nav--icon personal__nav--icon_3"></i>Реквизиты компании</a></li>
 				</ul>
 			</div>
 			<div class="personal__rc">
-				<span class="personal__rc--title"><a href="#">Мои заказы</a></span>
-				<table class="personal__table">
-					<thead>
-						<tr>
-							<th>Номер</th>
-							<th>Дата</th>
-							<th>Сумма</th>
-							<th>Статус</th>
-							<th>Счет</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td colspan="5" align="center">Нет заказов</td>
-						</tr>
-					</tbody>
-				</table>
+				<span class="personal__rc--title">Реквизиты компании</span>
+				<div class="personal-form personal-form_wide">
+					<div class="personal-form__item">
+						<label class="personal-form--label">Название компании <i>*</i></label>
+						<div class="personal-form--input">
+							<input type="text" placeholder="Например: ООО «Авто-Мир»">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item personal-form__item_half">
+						<label class="personal-form--label">ИНН <i>*</i></label>
+						<div class="personal-form--input">
+							<input type="text">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item personal-form__item_half">
+						<label class="personal-form--label">КПП</label>
+						<div class="personal-form--input">
+							<input type="text">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item">
+						<label class="personal-form--label">Юридический адрес</label>
+						<div class="personal-form--input">
+							<input type="text" placeholder="Например: 656000 г. Камень-на-Оби, ул. Демьяна Бедного, 31">
+							<i class="personal-form--edit"></i>
+						</div>
+					</div>
+					<div class="personal-form__item">
+						<label class="personal-form--label">Номер телефона <i>*</i></label>
+						<div class="personal-form--input personal-form--input_error">
+							<input type="text" value="avdeevnick@gmail.com">
+							<i class="personal-form--edit"></i>
+						</div>
+						<span class="personal-form--message">Неправильный ввод данных</span>
+					</div>
+					<div class="personal-form__item">
+						<label class="personal-form--label">Электронная почта (e-mail)</label>
+						<div class="personal-form--input personal-form--input_error">
+							<input type="text" value="+7 (___) ___ - ____">
+							<i class="personal-form--edit"></i>
+						</div>
+						<span class="personal-form--message">Введите корректный адрес</span>
+					</div>
+					<div class="personal-form__item personal-form__item_control">
+						<button class="personal--button">Сохранить</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="clear"></div>
@@ -137,6 +170,7 @@
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/jquery-ui.js"></script>
 	<script type="text/javascript" src="./js/jcarousel.js"></script>
+	<script type="text/javascript" src="./js/selectric.js"></script>
 	<script type="text/javascript" src="./js/slides.js"></script>
 	<script type="text/javascript" src="./js/uniform.js"></script>
 	<script type="text/javascript" src="./js/dynamic.js"></script>
